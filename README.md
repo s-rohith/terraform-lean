@@ -54,7 +54,14 @@ AWS Region "us-east-1" was used to create resources during the course
   terraform console -var="host_os=unix"
   terraform console -var-file="dev.tfvars"
 
-  
+  # Test the condition and if windows, insert ["Powershell", "-Command"]
+  $ terraform console -var="host_os=linux"
+  > var.host_os == "windows" ? ["Powershell", "-Command"] : ["bash", "-c"]
+  [
+    "bash",
+    "-c",
+  ]
+
 ```
 
 ## References:
@@ -89,4 +96,6 @@ AWS Region "us-east-1" was used to create resources during the course
 *Docs:*
 1. [Terraform Language Documentation](https://developer.hashicorp.com/terraform/language)
 1. [Declaring an Input Variable](https://developer.hashicorp.com/terraform/language/values/variables)
+1. [Conditional Expressions](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
+
 
