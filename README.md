@@ -39,7 +39,6 @@ AWS Region "us-east-1" was used to create resources during the course
     ubuntu@ip-10-123-1-185:~$ docker --version
     Docker version 24.0.6, build ed223bc
 
-
 ```
 
 ## References:
@@ -57,7 +56,12 @@ Resources used in this course,
 1. [AMI Datasource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)
 1. [Key Pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair)
 1. [EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+1. [local-exec Provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec) - provisioner "local-exec"
 
+Additonal Info:
+1. [Terraform Language Documentation](https://developer.hashicorp.com/terraform/language)
+1. [How to use Provisioners](https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax#how-to-use-provisioners)
+1. [templatefile Function](https://developer.hashicorp.com/terraform/language/functions/templatefile) (used within provisioner "local-exec" to utilize ssh script tpl)
 
 
 VScode Extension used,
