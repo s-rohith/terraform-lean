@@ -62,6 +62,16 @@ AWS Region "us-east-1" was used to create resources during the course
     "-c",
   ]
 
+
+  # Terraform output
+  terraform console
+  > aws_instance.dev_node.public_ip
+  "52.54.181.235"
+
+  terraform apply -refresh-only # after adding an entry in outputs.tf file by specifying what ouputs are required for automation purpose
+  terraform output
+  dev_ip = "52.54.181.235"
+
 ```
 
 ## References:
@@ -97,5 +107,5 @@ AWS Region "us-east-1" was used to create resources during the course
 1. [Terraform Language Documentation](https://developer.hashicorp.com/terraform/language)
 1. [Declaring an Input Variable](https://developer.hashicorp.com/terraform/language/values/variables)
 1. [Conditional Expressions](https://developer.hashicorp.com/terraform/language/expressions/conditionals)
-
+1. [Output Values](https://developer.hashicorp.com/terraform/language/values/outputs)
 
