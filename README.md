@@ -46,6 +46,8 @@ Resources used in this course,
 1. [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
 1. [AMI Datasource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)
 1. [Key Pair](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/key_pair)
+1. [EC2 Instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+
 
 
 VScode Extension used,
