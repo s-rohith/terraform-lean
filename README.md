@@ -35,3 +35,5 @@ Resources used in this course,
 1. [Route Table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table)
 1. [Route](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route)
 1. [Roue Table Associate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route_table_association)
+1. [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
+1. [AMI Datasource](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)
