@@ -42,6 +42,19 @@ AWS Region "us-east-1" was used to create resources during the course
   terraform apply -replace aws_instance.dev_node
   cat  ~/.ssh/config # to verify whether the config is created/updated
 
+  # Working with vars, use console to test the vars
+  $ terraform console
+  > var.host_os
+  (known after apply)
+
+  $ terraform console # after adding <default = "linux"> in variables.tf
+  > var.host_os
+  "linux"
+
+  terraform console -var="host_os=unix"
+  terraform console -var-file="dev.tfvars"
+
+  
 ```
 
 ## References:
