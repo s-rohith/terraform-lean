@@ -53,3 +53,4 @@ Resources used in this course,
 VScode Extension used,
 1. [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode)
 1. [Terraform](https://marketplace.visualstudio.com/items?itemName=4ops.terraform)
+
