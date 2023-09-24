@@ -30,6 +30,16 @@ AWS Region "us-east-1" was used to create resources during the course
   ssh-keygen -t ed25519
   ## Enter file in which to save the key (/home/rohith/.ssh/id_ed25519): /home/rohith/.ssh/mtckey
 
+  # ssh into ec2 instance
+  terraform state list
+  terraform state show aws_instance.dev_node # Copy the Public IP address
+
+  ssh -i ~/.ssh/mtckey ubuntu@18.209.108.213
+    # Check docker version within the EC2 instance
+    ubuntu@ip-10-123-1-185:~$ docker --version
+    Docker version 24.0.6, build ed223bc
+
+
 ```
 
 ## References:
@@ -53,4 +63,4 @@ Resources used in this course,
 VScode Extension used,
 1. [AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode)
 1. [Terraform](https://marketplace.visualstudio.com/items?itemName=4ops.terraform)
-
+1. [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
