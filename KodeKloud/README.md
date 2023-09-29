@@ -20,8 +20,11 @@ Resources created during the course,
  terraform init
  terraform plan
  terraform apply -auto-approve
+ 
  terraform show
  terraform state list
  terraform state show local_file.pet
 
+ terraform fmt
+ 
 ```
