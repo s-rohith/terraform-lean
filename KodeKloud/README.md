@@ -28,6 +28,9 @@ There are two main reasons to use the `providers` argument: [(*reference*)](http
 1. [random_pet](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet)
 1. [random_string](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/string)
 
+Reference docs;
+1. [Version Constraint Syntax](https://developer.hashicorp.com/terraform/language/expressions/version-constraints#version-constraint-syntax)
+
 
 *Commands used in this course,*
 ```sh
