@@ -4,11 +4,11 @@ resource "random_pet" "my-pet" {
   separator = " "
 }
 
-resource random_string name {
-  length  = "16"
-  upper   = true
-  lower   = true
-  numeric  = true
-  special = true
+resource "random_string" "name" {
+  length           = "16"
+  upper            = true
+  lower            = true
+  numeric          = true
+  special          = true
   override_special = "/@£$"
 }

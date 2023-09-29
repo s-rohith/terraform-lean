@@ -9,6 +9,10 @@ Resources created during the course,
 ## References:
 Providers are a logical abstraction of an upstream API. They are responsible for understanding API interactions and exposing resources. 
 
+There are two main reasons to use the `providers` argument: [(*reference*)](https://developer.hashicorp.com/terraform/language/meta-arguments/module-providers#when-to-specify-providers)
+* Using different default provider configurations for a child module.
+* Configuring a module that requires multiple configurations of the same provider.
+
 *Available providers*
 - [Official](https://registry.terraform.io/browse/providers?tier=official)
 - [Partner](https://registry.terraform.io/browse/providers?tier=partner) 
@@ -49,5 +53,7 @@ Providers are a logical abstraction of an upstream API. They are responsible for
  terraform init -upgrade
  terraform plan
  terraform apply -auto-approve
+ terraform providers
+ terraform version
 
 ```
