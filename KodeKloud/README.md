@@ -60,3 +60,12 @@ Reference docs;
  terraform version
 
 ```
+
+## Certification details
+1. [Exam-taker Handbook ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360048211571-Exam-taker-Handbook)
+1. [What are the system requirements for an appointment? ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360048446631-What-are-the-system-requirements-for-an-appointment-)
+1. [What are the physical environment requirements during an appointment? ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360047745372-What-are-the-physical-environment-requirements-during-an-appointment-)
+1. [What is the passing score? ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360047382831-What-is-the-passing-score-)
+1. [How do I see my exam results? ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360049698591-How-do-I-see-my-exam-results-)
+1. [What kind of identification is required to take the exam? ](https://hashicorp-certifications.zendesk.com/hc/en-us/articles/360045101912-What-kind-of-identification-is-required-to-take-the-exam-)
+1. [For more details, check here..](https://hashicorp-certifications.zendesk.com/hc/en-us)
