@@ -31,6 +31,10 @@ There are two main reasons to use the `providers` argument: [(*reference*)](http
 Reference docs;
 1. [Version Constraint Syntax](https://developer.hashicorp.com/terraform/language/expressions/version-constraints#version-constraint-syntax)
 
+### Terraform Variable Precedence
+Terraform loads variables in the following order, with later sources taking precedence over earlier ones:
+
+![Terraform Variable Precedence](images/var_definition_precedence.png)
 
 *Commands used in this course,*
 ```sh
@@ -58,6 +62,19 @@ Reference docs;
  terraform apply -auto-approve
  terraform providers
  terraform version
+
+ # Variables
+  # passing vars while running terraform aply"
+  terraform apply -var "filename=/home/pets.txt"
+    
+  # expoting the vars to environmental values
+  export TF_VAR_filename="filename=/home/pets.txt"
+  terraform apply
+
+  # set valiables using variables.tfvars
+  terraform plan -var-file="dev.tfvars"
+  terraform apply -var-file="dev.tfvars" -auto-approve
+
 
 ```
 

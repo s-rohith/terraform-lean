@@ -1,6 +1,6 @@
 resource "local_file" "pet" {
-  filename        = "/home/rohith/MyLab/terraform-learn/KodeKloud/pets.txt"
-  content         = "We love pets!"
+  filename        = var.pet_filename
+  content         = var.pet_content
   file_permission = "0644"
 }
 
