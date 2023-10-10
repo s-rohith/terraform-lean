@@ -1,6 +1,6 @@
 # [Terraform Associate Certification Exam Preparation](https://cloudacademy.com/learning-paths/terraform-associate-certification-exam-preparation-1-2814/)
 
-[CA GitHub](https://github.com/cloudacademy/terraform-aws) 
+[CA GitHub - AWS Exercises](https://github.com/cloudacademy/terraform-aws) 
 
 ### 1. AWS Authetication Config
 There are three approaches,
@@ -24,7 +24,7 @@ There are three approaches,
 
 ### 2. Terraform CLI Subcommands
 
-Commonly used commands / primary workflow commands 
+Commonly used commands / primary workflow commands,
 ```
 $ terraform -help
 Usage: terraform [global options] <subcommand> [args]
@@ -124,4 +124,60 @@ block {
   EOT
 }
 ```
+
+[Type Constraints](https://developer.hashicorp.com/terraform/language/expressions/type-constraints):
+- [Primitive Types](https://developer.hashicorp.com/terraform/language/expressions/type-constraints#primitive-types):
+  The available primitive types are:
+  - string
+  - number
+  - bool
+
+- [Complex Types](https://developer.hashicorp.com/terraform/language/expressions/type-constraints#complex-types):
+  A complex type is a type that groups multiple values into a single value. 
+
+  The three kinds of collection type in the Terraform language are:
+  - list(...)
+  - map(...)
+  - set(...)
+
+  The two kinds of structural type in the Terraform language are:
+  - object(...)
+  - tuple(...)
+
+[Terraform map variable](https://gist.github.com/devops-school/1f3efed15d390748b208a109f9765e0c):
+
+Maps are a way to create variables that are lookup tables. Let's extract our AMIs into a map and add support for the us-west-2 region as well:
+```sh
+variable "amis" {
+  type    = "map"
+  default = {
+    "us-east-1" = "ami-12345"
+    "us-west-2" = "ami-45678"
+  }
+}
+```
+
+A variable can have a map type,
+```sh
+resource "aws_instance" "example" {
+  ami           = var.amis[var.region]
+  instance_type = "t2.micro"
+}
+```
+
+[Terraform functions](https://developer.hashicorp.com/terraform/language/functions):
+
+The Terraform language includes a number of built-in functions that you can call from within expressions to transform and combine values.
+- String
+- Numeric
+- Collection
+- Date and Time
+- Crypto and Hash
+- Filesystem
+- IP Network
+- Encoding
+- Type Conversion
+
+Reference examples, [here](https://spacelift.io/blog/terraform-functions-expressions-loops)
+
 
